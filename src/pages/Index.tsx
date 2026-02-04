@@ -1,12 +1,37 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/landing/Header";
+import HeroSection from "@/components/landing/HeroSection";
+import StatsSection from "@/components/landing/StatsSection";
+import ValueProposition from "@/components/landing/ValueProposition";
+import PlotOptions from "@/components/landing/PlotOptions";
+import Amenities from "@/components/landing/Amenities";
+import Location from "@/components/landing/Location";
+import Differentiation from "@/components/landing/Differentiation";
+import EMICalculator from "@/components/landing/EMICalculator";
+import Testimonials from "@/components/landing/Testimonials";
+import LeadForm from "@/components/landing/LeadForm";
+import FAQ from "@/components/landing/FAQ";
+import FinalCTA from "@/components/landing/FinalCTA";
+import Footer from "@/components/landing/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Header />
+      <main>
+        <HeroSection />
+        <StatsSection />
+        <ValueProposition />
+        <PlotOptions />
+        <Amenities />
+        <Location />
+        <Differentiation />
+        <EMICalculator />
+        <Testimonials />
+        <LeadForm />
+        <FAQ />
+        <FinalCTA />
+      </main>
+      <Footer />
     </div>
   );
 };
