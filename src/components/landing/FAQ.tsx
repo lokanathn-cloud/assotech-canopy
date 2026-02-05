@@ -23,31 +23,6 @@ const faqs = [
     answer:
       "We support home loans from all major banks including HDFC, ICICI, Axis, SBI, and more. Our team assists with loan processing and documentation. Current home loan interest rates in India typically range from 8-9.5% p.a. Use our EMI calculator to estimate your monthly payments.",
   },
-  {
-    question: "How is the connectivity to Delhi and Noida?",
-    answer:
-      "Assotech Canopy is strategically located on NH-24 with excellent connectivity. It's just 15 minutes from Akshardham Temple (Delhi), 10 minutes from major schools and hospitals, and has quick access to Noida Expressway. The upcoming Jewar Airport is approximately 30 minutes away.",
-  },
-  {
-    question: "What is the expected appreciation potential?",
-    answer:
-      "The Crossing Republik micro-market has shown consistent land appreciation of 12-15% annually over the past decade. With the upcoming Jewar Airport and improved infrastructure, experts project continued strong growth in this corridor.",
-  },
-  {
-    question: "Can I build according to my own design?",
-    answer:
-      "Absolutely! Design freedom is our core USP. You can build your dream home exactly as you envision. Your architectural plans must follow GDA guidelines, but within those parameters, you have complete creative control over your home's design.",
-  },
-  {
-    question: "What are the payment terms?",
-    answer:
-      "We offer flexible payment plans including construction-linked payment, time-linked payment, and customized plans. A booking amount secures your plot, with the remaining amount payable as per the chosen plan. Contact our sales team for detailed payment schedules.",
-  },
-  {
-    question: "What amenities are included in the township?",
-    answer:
-      "Assotech Canopy features world-class amenities including an Amphitheater, Community Park, Temple, Children's Play Area, Open Gym, Floral Carpets landscaping, Tree-Lined Avenues, Jogging Track, and a dedicated Pets Area. All amenities are part of the 360-acre integrated township.",
-  },
 ];
 
 const FAQ = () => {
