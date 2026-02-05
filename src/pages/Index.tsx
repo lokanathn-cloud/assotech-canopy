@@ -10,7 +10,6 @@ import EMICalculator from "@/components/landing/EMICalculator";
 import Testimonials from "@/components/landing/Testimonials";
 import LeadForm from "@/components/landing/LeadForm";
 import FAQ from "@/components/landing/FAQ";
-import FinalCTA from "@/components/landing/FinalCTA";
 import Footer from "@/components/landing/Footer";
 
 const Index = () => {
@@ -29,7 +28,6 @@ const Index = () => {
         <Testimonials />
         <LeadForm />
         <FAQ />
-        <FinalCTA />
       </main>
       <Footer />
     </div>
