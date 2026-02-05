@@ -8,7 +8,6 @@ interface PlotCardProps {
   subtitle: string;
   size: string;
   description: string;
-  benefits: string[];
   delay: number;
   featured?: boolean;
 }
@@ -18,7 +17,6 @@ const PlotCard = ({
   subtitle,
   size,
   description,
-  benefits,
   delay,
   featured = false,
 }: PlotCardProps) => {
@@ -48,17 +46,6 @@ const PlotCard = ({
         <h3 className="text-2xl font-bold text-foreground mb-1">{title}</h3>
         <p className="text-primary font-medium mb-3">{subtitle}</p>
         <p className="text-muted-foreground mb-6">{description}</p>
-
-        <div className="space-y-3 mb-6">
-          {benefits.map((benefit, index) => (
-            <div key={index} className="flex items-center gap-3">
-              <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <Check className="h-3 w-3 text-primary" />
-              </div>
-              <span className="text-sm text-foreground">{benefit}</span>
-            </div>
-          ))}
-        </div>
 
         <Button className="w-full" size="lg" asChild>
           <a href="#lead-form">
@@ -98,12 +85,6 @@ const PlotOptions = () => {
             subtitle="The Perfect Start"
             size="100 Sq. Yards"
             description="Ideal for forward-thinking families who value both space and practicality. Build smart, live large."
-            benefits={[
-              "Perfect for nuclear families",
-              "Manageable footprint, maximum utility",
-              "Optimal budget-to-space ratio",
-              "Contemporary design potential",
-            ]}
             delay={0.2}
           />
           <PlotCard
@@ -111,12 +92,6 @@ const PlotOptions = () => {
             subtitle="The Legacy"
             size="200 Sq. Yards"
             description="For those who dream big—multi-generational living with room to spare. Create your architectural masterpiece."
-            benefits={[
-              "Multi-generational family living",
-              "Expansive garden and outdoor space",
-              "Premium architectural showcase",
-              "Maximum design freedom",
-            ]}
             delay={0.3}
             featured
           />
