@@ -2,11 +2,8 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Check, ArrowRight, Users, Maximize, Home } from "lucide-react";
-import villa100 from "@/assets/villa-100sqyd.jpg";
-import villa200 from "@/assets/villa-200sqyd.jpg";
 
 interface PlotCardProps {
-  image: string;
   title: string;
   subtitle: string;
   size: string;
@@ -17,7 +14,6 @@ interface PlotCardProps {
 }
 
 const PlotCard = ({
-  image,
   title,
   subtitle,
   size,
@@ -40,26 +36,15 @@ const PlotCard = ({
       }`}
     >
       {featured && (
-        <div className="absolute top-4 right-4 z-10 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">
+        <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold w-fit ml-auto mr-4 mt-4">
           Popular Choice
         </div>
       )}
 
-      <div className="relative h-64 overflow-hidden">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-        <div className="absolute bottom-4 left-4">
-          <span className="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm">
-            {size}
-          </span>
-        </div>
-      </div>
-
-      <div className="p-6">
+      <div className="p-6 pt-4">
+        <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
+          {size}
+        </span>
         <h3 className="text-2xl font-bold text-foreground mb-1">{title}</h3>
         <p className="text-primary font-medium mb-3">{subtitle}</p>
         <p className="text-muted-foreground mb-6">{description}</p>
@@ -109,7 +94,6 @@ const PlotOptions = () => {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <PlotCard
-            image={villa100}
             title="100 Sq. Yard"
             subtitle="The Perfect Start"
             size="100 Sq. Yards"
@@ -123,7 +107,6 @@ const PlotOptions = () => {
             delay={0.2}
           />
           <PlotCard
-            image={villa200}
             title="200 Sq. Yard"
             subtitle="The Legacy"
             size="200 Sq. Yards"
