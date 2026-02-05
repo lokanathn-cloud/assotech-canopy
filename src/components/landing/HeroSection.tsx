@@ -98,7 +98,7 @@ const HeroSection = () => {
             </div>
             <div className="flex items-center gap-2 text-white/80">
               <Award className="h-5 w-5 text-primary" />
-              <span className="text-sm">4 Decades Legacy</span>
+              <span className="text-sm">38+ Years Legacy</span>
             </div>
           </motion.div>
         </div>

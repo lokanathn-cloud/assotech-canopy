@@ -12,11 +12,11 @@ const EMICalculator = () => {
   const [plotSize, setPlotSize] = useState<"100" | "200">("100");
   const [loanAmount, setLoanAmount] = useState(5000000);
   const [tenure, setTenure] = useState(15);
-  const [interestRate] = useState(8.5);
+  const [interestRate, setInterestRate] = useState(8.5);
 
   const plotPrices = {
-    "100": { min: 3000000, max: 5000000, default: 4000000 },
-    "200": { min: 6000000, max: 10000000, default: 8000000 },
+    "100": { min: 16000000, max: 25000000, default: 16000000 },
+    "200": { min: 25000000, max: 50000000, default: 32000000 },
   };
 
   const emiDetails = useMemo(() => {
@@ -167,10 +167,25 @@ const EMICalculator = () => {
               </div>
 
               {/* Interest Rate Display */}
-              <div className="p-4 bg-muted/50 rounded-lg">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">Interest Rate</span>
-                  <span className="font-semibold text-foreground">{interestRate}% p.a.</span>
+              {/* Interest Rate Slider */}
+              <div className="mb-6">
+                <div className="flex justify-between items-center mb-3">
+                  <label className="text-sm font-medium text-foreground">
+                    Interest Rate (p.a.)
+                  </label>
+                  <span className="text-primary font-bold">{interestRate}%</span>
+                </div>
+                <Slider
+                  value={[interestRate]}
+                  onValueChange={(value) => setInterestRate(value[0])}
+                  min={7}
+                  max={12}
+                  step={0.1}
+                  className="w-full"
+                />
+                <div className="flex justify-between text-xs text-muted-foreground mt-1">
+                  <span>7%</span>
+                  <span>12%</span>
                 </div>
               </div>
             </div>

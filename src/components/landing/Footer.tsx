@@ -34,8 +34,8 @@ const Footer = () => {
               className="h-12 w-auto mb-4 rounded"
             />
             <p className="text-background/70 text-sm mb-4">
-              Assotech Group, with over 4 decades of excellence, has delivered 30,000+ homes 
-              across India. Assotech Canopy represents our commitment to premium living.
+              Assotech Group, with 38+ years of excellence, has delivered 40,000+ units 
+              across 45+ successful projects. Assotech Canopy represents our commitment to premium living.
             </p>
             <div className="flex items-center gap-2 text-sm text-background/70">
               <span className="px-2 py-1 bg-background/10 rounded text-xs">CREDAI Member</span>
