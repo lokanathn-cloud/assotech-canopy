@@ -47,13 +47,13 @@ const StatsSection = () => {
   const stats = [
     {
       icon: <Building2 className="h-6 w-6" />,
-      value: "4 Decades",
-      label: "30,000+ Homes",
+      value: "38+ Years",
+      label: "40,000+ Units",
     },
     {
       icon: <MapPin className="h-6 w-6" />,
-      value: "360 Acres",
-      label: "Integrated Township",
+      value: "6.75 Acres",
+      label: "156 Premium Plots",
     },
     {
       icon: <Clock className="h-6 w-6" />,
@@ -67,8 +67,8 @@ const StatsSection = () => {
     },
     {
       icon: <Shield className="h-6 w-6" />,
-      value: "RERA",
-      label: "Approved",
+      value: "₹1.60 Cr+",
+      label: "Starting Price",
     },
   ];
 

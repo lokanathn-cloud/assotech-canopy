@@ -58,8 +58,8 @@ const Differentiation = () => {
     { feature: "No Shared Walls", canopy: true, others: false },
     { feature: "Curated Community", canopy: true, others: false },
     { feature: "RERA Approved", canopy: true, others: true },
-    { feature: "360-Acre Integrated Township", canopy: true, others: false },
-    { feature: "40 Years Developer Legacy", canopy: true, others: false },
+    { feature: "Part of 360-Acre Township", canopy: true, others: false },
+    { feature: "38+ Years Developer Legacy", canopy: true, others: false },
     { feature: "Land Appreciation Potential", canopy: true, others: false },
   ];
 

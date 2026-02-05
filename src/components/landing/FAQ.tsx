@@ -16,12 +16,12 @@ const faqs = [
   {
     question: "What plot sizes are available?",
     answer:
-      "We offer two plot sizes: 100 Sq. Yards (The Perfect Start) ideal for nuclear families, and 200 Sq. Yards (The Legacy) perfect for multi-generational living. Both options provide complete design freedom within GDA guidelines.",
+      "We offer two plot sizes: 100 Sq. Yards (The Perfect Start) ideal for nuclear families, and 200 Sq. Yards (The Legacy) perfect for multi-generational living. Assotech Canopy features 156 premium plots across 6.75 acres. Both options provide complete design freedom within GDA guidelines. Pricing starts from ₹1.60 Cr.",
   },
   {
     question: "What financing options are available?",
     answer:
-      "We support home loans from all major banks including HDFC, ICICI, Axis, SBI, and more. Our team assists with loan processing and documentation. EMI options start as low as ₹30,000 per month depending on the plot size and loan terms.",
+      "We support home loans from all major banks including HDFC, ICICI, Axis, SBI, and more. Our team assists with loan processing and documentation. Current home loan interest rates in India typically range from 8-9.5% p.a. Use our EMI calculator to estimate your monthly payments.",
   },
   {
     question: "How is the connectivity to Delhi and Noida?",
