@@ -1,38 +1,53 @@
 import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react";
 import canopyLogo from "@/assets/canopy-logo.jpg";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  const quickLinks = [
-    { label: "Home", href: "#hero" },
-    { label: "About Project", href: "#value-proposition" },
-    { label: "Plot Options", href: "#plot-options" },
-    { label: "Amenities", href: "#amenities" },
-    { label: "Location", href: "#location" },
-    { label: "FAQ", href: "#faq" },
-    { label: "Download Brochure", href: "#lead-form" },
-  ];
-
-  const socialLinks = [
-    { icon: <Facebook className="h-5 w-5" />, href: "#", label: "Facebook" },
-    { icon: <Instagram className="h-5 w-5" />, href: "#", label: "Instagram" },
-    { icon: <Linkedin className="h-5 w-5" />, href: "#", label: "LinkedIn" },
-    { icon: <Twitter className="h-5 w-5" />, href: "#", label: "Twitter" },
-  ];
-
-  return (
-    <footer className="bg-foreground text-background">
+  const quickLinks = [{
+    label: "Home",
+    href: "#hero"
+  }, {
+    label: "About Project",
+    href: "#value-proposition"
+  }, {
+    label: "Plot Options",
+    href: "#plot-options"
+  }, {
+    label: "Amenities",
+    href: "#amenities"
+  }, {
+    label: "Location",
+    href: "#location"
+  }, {
+    label: "FAQ",
+    href: "#faq"
+  }, {
+    label: "Download Brochure",
+    href: "#lead-form"
+  }];
+  const socialLinks = [{
+    icon: <Facebook className="h-5 w-5" />,
+    href: "#",
+    label: "Facebook"
+  }, {
+    icon: <Instagram className="h-5 w-5" />,
+    href: "#",
+    label: "Instagram"
+  }, {
+    icon: <Linkedin className="h-5 w-5" />,
+    href: "#",
+    label: "LinkedIn"
+  }, {
+    icon: <Twitter className="h-5 w-5" />,
+    href: "#",
+    label: "Twitter"
+  }];
+  return <footer className="bg-foreground text-background">
       {/* Main Footer */}
       <div className="container-custom section-padding pb-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* About Assotech */}
           <div>
-            <img
-              src={canopyLogo}
-              alt="Assotech Canopy"
-              className="h-12 w-auto mb-4 rounded"
-            />
+            <img src={canopyLogo} alt="Assotech Canopy" className="h-12 w-auto mb-4 rounded" />
             <p className="text-background/70 text-sm mb-4">
               Assotech Group, with 38+ years of excellence, has delivered 40,000+ units 
               across 45+ successful projects. Assotech Canopy represents our commitment to premium living.
@@ -78,16 +93,11 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {quickLinks.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-background/70 hover:text-background transition-colors"
-                  >
+              {quickLinks.map(link => <li key={link.label}>
+                  <a href={link.href} className="text-sm text-background/70 hover:text-background transition-colors">
                     {link.label}
                   </a>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -95,27 +105,13 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4">Connect With Us</h4>
             <div className="flex gap-3 mb-6">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  aria-label={social.label}
-                  className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
-                >
-                  {social.icon}
-                </a>
-              ))}
+              {socialLinks.map(social => {})}
             </div>
 
             <div className="text-sm text-background/70">
               <p className="font-semibold text-background mb-2">RERA Registration</p>
               <p>UPRERAPRJ922718</p>
-              <a
-                href="https://up-rera.in"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline"
-              >
+              <a href="https://up-rera.in" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                 Verify on UP RERA Portal →
               </a>
             </div>
@@ -142,8 +138,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
