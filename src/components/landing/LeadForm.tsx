@@ -290,22 +290,22 @@ const LeadForm = () => {
                 <h4 className="font-bold text-foreground mb-4">Contact Directly</h4>
                 <div className="space-y-3">
                   <a
-                    href="tel:+919999999999"
+                    href="tel:+917668645668"
                     className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
                   >
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                       <Phone className="h-5 w-5 text-primary" />
                     </div>
-                    <span>+91 99999 99999</span>
+                    <span>+91 7668645668</span>
                   </a>
                   <a
-                    href="mailto:sales@assotechcanopy.com"
+                    href="mailto:Vikas.s1@assotechlimited.com"
                     className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
                   >
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                       <Mail className="h-5 w-5 text-primary" />
                     </div>
-                    <span>sales@assotechcanopy.com</span>
+                    <span>Vikas.s1@assotechlimited.com</span>
                   </a>
                 </div>
               </div>

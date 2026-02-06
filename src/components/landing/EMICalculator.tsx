@@ -233,7 +233,7 @@ const EMICalculator = () => {
 
               {/* CTA */}
               <Button className="w-full" size="lg" asChild>
-                <a href="tel:+919999999999">
+                <a href="tel:+917668645668">
                   <Phone className="mr-2 h-5 w-5" />
                   Talk to Investment Specialist
                 </a>

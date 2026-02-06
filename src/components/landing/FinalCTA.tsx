@@ -53,14 +53,14 @@ const FinalCTA = () => {
           {/* Contact Options */}
           <div className="flex flex-wrap justify-center gap-6">
             <a
-              href="tel:+919999999999"
+              href="tel:+917668645668"
               className="flex items-center gap-2 text-primary-foreground/90 hover:text-white transition-colors"
             >
               <Phone className="h-5 w-5" />
-              <span>+91 99999 99999</span>
+              <span>+91 7668645668</span>
             </a>
             <a
-              href="https://wa.me/919999999999"
+              href="https://api.whatsapp.com/send/?phone=919124573056&text=Hi%2C+I%27m+interested+in+Assotech+Canopy&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-primary-foreground/90 hover:text-white transition-colors"
@@ -69,11 +69,11 @@ const FinalCTA = () => {
               <span>WhatsApp</span>
             </a>
             <a
-              href="mailto:sales@assotechcanopy.com"
+              href="mailto:Vikas.s1@assotechlimited.com"
               className="flex items-center gap-2 text-primary-foreground/90 hover:text-white transition-colors"
             >
               <Mail className="h-5 w-5" />
-              <span>sales@assotechcanopy.com</span>
+              <span>Vikas.s1@assotechlimited.com</span>
             </a>
           </div>
         </motion.div>
