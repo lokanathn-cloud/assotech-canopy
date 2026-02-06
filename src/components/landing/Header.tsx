@@ -54,9 +54,9 @@ const Header = () => {
 
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-4">
-              <a href="tel:+919999999999" className={`flex items-center gap-2 text-sm font-medium ${isScrolled ? "text-foreground" : "text-white"}`}>
+              <a href="tel:+917668645668" className={`flex items-center gap-2 text-sm font-medium ${isScrolled ? "text-foreground" : "text-white"}`}>
                 <Phone className="h-4 w-4" />
-                +91 99999 99999
+                +91 7668645668
               </a>
               <Button size="lg" className="font-semibold" asChild>
                 <a href="#lead-form">Get Quote</a>
@@ -99,9 +99,9 @@ const Header = () => {
                       {link.label}
                     </a>)}
                   <hr className="my-4 border-border" />
-                  <a href="tel:+919999999999" className="flex items-center gap-2 text-foreground">
+                  <a href="tel:+917668645668" className="flex items-center gap-2 text-foreground">
                     <Phone className="h-5 w-5" />
-                    +91 99999 99999
+                    +91 7668645668
                   </a>
                   <Button className="w-full mt-4" asChild>
                     <a href="#lead-form">Get Quote</a>
@@ -116,7 +116,7 @@ const Header = () => {
       <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-card border-t border-border shadow-lg">
         <div className="flex gap-2 p-3">
           <Button variant="outline" className="flex-1" asChild>
-            <a href="tel:+919999999999">
+            <a href="tel:+917668645668">
               <Phone className="h-4 w-4 mr-2" />
               Call Now
             </a>
