@@ -7,7 +7,6 @@ import Amenities from "@/components/landing/Amenities";
 import Location from "@/components/landing/Location";
 import Differentiation from "@/components/landing/Differentiation";
 import EMICalculator from "@/components/landing/EMICalculator";
-import Testimonials from "@/components/landing/Testimonials";
 import LeadForm from "@/components/landing/LeadForm";
 import FAQ from "@/components/landing/FAQ";
 import Footer from "@/components/landing/Footer";
@@ -25,7 +24,6 @@ const Index = () => {
         <Location />
         <Differentiation />
         <EMICalculator />
-        <Testimonials />
         <LeadForm />
         <FAQ />
       </main>
