@@ -15,8 +15,8 @@ const EMICalculator = () => {
   const [interestRate, setInterestRate] = useState(8.5);
 
   const plotPrices = {
-    "100": { min: 16000000, max: 25000000, default: 16000000 },
-    "200": { min: 25000000, max: 50000000, default: 32000000 },
+    "100": { min: 10000000, max: 25000000, default: 10000000 },
+    "200": { min: 10000000, max: 25000000, default: 15000000 },
   };
 
   const emiDetails = useMemo(() => {

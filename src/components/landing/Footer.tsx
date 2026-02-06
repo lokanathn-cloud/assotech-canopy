@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react";
-import canopyLogo from "@/assets/canopy-logo.jpg";
+import canopyLogo from "@/assets/canopy-logo.png";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const quickLinks = [{
@@ -105,7 +105,16 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4">Connect With Us</h4>
             <div className="flex gap-3 mb-6">
-              {socialLinks.map(social => {})}
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  aria-label={social.label}
+                  className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
+                >
+                  {social.icon}
+                </a>
+              ))}
             </div>
 
             <div className="text-sm text-background/70">
