@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
-import canopyLogo from "@/assets/canopy-logo.jpg";
+import canopyLogo from "@/assets/canopy-logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
