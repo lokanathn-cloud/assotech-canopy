@@ -1,12 +1,24 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Download, ArrowRight, Shield, Building, Award } from "lucide-react";
-import heroBanner from "@/assets/hero-banner.jpg";
+import heroMobile from "@/assets/hero-mobile.jpg";
+import heroDesktop from "@/assets/hero-desktop.jpg";
 const HeroSection = () => {
   return <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image - Responsive */}
       <div className="absolute inset-0">
-        <img src={heroBanner} alt="Assotech Canopy Premium Plotted Development" className="w-full h-full object-cover" />
+        {/* Mobile Image */}
+        <img 
+          src={heroMobile} 
+          alt="Assotech Canopy Premium Plotted Development" 
+          className="w-full h-full object-cover md:hidden" 
+        />
+        {/* Desktop Image */}
+        <img 
+          src={heroDesktop} 
+          alt="Assotech Canopy Premium Plotted Development" 
+          className="w-full h-full object-cover hidden md:block" 
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
       </div>
 
