@@ -22,7 +22,7 @@ const Testimonials = () => {
             Trusted by <span className="text-primary">Homeowners & Investors</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Join 40,000+ satisfied homeowners who chose Assotech.
+            Join 40,000+ satisfied homeowners who chose Assotech for their dream homes.
           </p>
         </motion.div>
 
