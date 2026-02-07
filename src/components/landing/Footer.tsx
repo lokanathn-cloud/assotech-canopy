@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import canopyLogo from "@/assets/canopy-logo.png";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -26,20 +26,16 @@ const Footer = () => {
   }];
   const socialLinks = [{
     icon: <Facebook className="h-5 w-5" />,
-    href: "#",
+    href: "https://www.facebook.com/profile.php?id=61578020558564",
     label: "Facebook"
   }, {
     icon: <Instagram className="h-5 w-5" />,
-    href: "#",
+    href: "https://www.instagram.com/assotechgroup/",
     label: "Instagram"
   }, {
     icon: <Linkedin className="h-5 w-5" />,
-    href: "#",
+    href: "https://www.linkedin.com/company/assotech-limited/?originalSubdomain=in",
     label: "LinkedIn"
-  }, {
-    icon: <Twitter className="h-5 w-5" />,
-    href: "#",
-    label: "Twitter"
   }];
   return <footer className="bg-foreground text-background">
       {/* Main Footer */}
@@ -105,7 +101,18 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4">Connect With Us</h4>
             <div className="flex gap-3 mb-6">
-              {socialLinks.map(social => {})}
+              {socialLinks.map(social => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
+                  aria-label={social.label}
+                >
+                  {social.icon}
+                </a>
+              ))}
             </div>
 
             <div className="text-sm text-background/70">
