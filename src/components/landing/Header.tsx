@@ -122,7 +122,8 @@ const Header = () => {
             </a>
           </Button>
           <Button className="flex-1" asChild>
-            <a href="#lead-form">Get Quote</a>
+            <a href="#lead-form">Get Details
+          </a>
           </Button>
         </div>
       </div>
