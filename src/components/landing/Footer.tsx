@@ -83,7 +83,7 @@ const Footer = () => {
               </div>
               <p className="pt-2">
                 <strong className="text-background">Office Hours:</strong><br />
-                Mon-Sat: 10:00 AM - 7:00 PM<br />
+                Mon-Sun: 10:00 AM - 6:00 PM<br />
                 Sunday: By Appointment
               </p>
             </div>
@@ -105,16 +105,9 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4">Connect With Us</h4>
             <div className="flex gap-3 mb-6">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  aria-label={social.label}
-                  className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
-                >
+              {socialLinks.map(social => <a key={social.label} href={social.href} aria-label={social.label} className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors">
                   {social.icon}
-                </a>
-              ))}
+                </a>)}
             </div>
 
             <div className="text-sm text-background/70">
