@@ -70,9 +70,11 @@ const LeadForm = () => {
               Our investment specialist will contact you within 2 hours during business hours.
               Meanwhile, download our brochure to explore more about Assotech Canopy.
             </p>
-            <Button size="lg" className="font-semibold">
-              <Download className="mr-2 h-5 w-5" />
-              Download Brochure
+            <Button size="lg" className="font-semibold" asChild>
+              <a href="/Assotech_Canopy_Brochure.pdf" download="Assotech_Canopy_Brochure.pdf">
+                <Download className="mr-2 h-5 w-5" />
+                Download Brochure
+              </a>
             </Button>
           </motion.div>
         </div>
