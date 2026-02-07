@@ -16,7 +16,7 @@ const formSchema = z.object({
   phone: z.string().min(10, "Please enter a valid phone number").max(15).regex(/^[0-9+\-\s]+$/, "Please enter a valid phone number"),
   email: z.string().email("Please enter a valid email address").max(255),
   plotSize: z.string().optional(),
-  timeline: z.string().optional(),
+  budget: z.string().optional(),
   message: z.string().max(1000).optional()
 });
 type FormValues = z.infer<typeof formSchema>;
@@ -37,7 +37,7 @@ const LeadForm = () => {
       phone: "",
       email: "",
       plotSize: "",
-      timeline: "",
+      budget: "",
       message: ""
     }
   });
@@ -166,21 +166,20 @@ const LeadForm = () => {
                           <FormMessage />
                         </FormItem>} />
 
-                    <FormField control={form.control} name="timeline" render={({
+                    <FormField control={form.control} name="budget" render={({
                     field
                   }) => <FormItem>
-                          <FormLabel>Investment Timeline</FormLabel>
+                          <FormLabel>Budget</FormLabel>
                           <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
                               <SelectTrigger>
-                                <SelectValue placeholder="Select timeline" />
+                                <SelectValue placeholder="Select budget" />
                               </SelectTrigger>
                             </FormControl>
                             <SelectContent>
-                              <SelectItem value="immediate">Immediate</SelectItem>
-                              <SelectItem value="3-6months">3-6 Months</SelectItem>
-                              <SelectItem value="6-12months">6-12 Months</SelectItem>
-                              <SelectItem value="longterm">Long-term</SelectItem>
+                              <SelectItem value="1-1.6cr">Up to 1 Cr - 1.6 Cr</SelectItem>
+                              <SelectItem value="1.6-2cr">1.6 Cr - 2 Cr</SelectItem>
+                              <SelectItem value="2-2.5cr">2 Cr - 2.5 Cr</SelectItem>
                             </SelectContent>
                           </Select>
                           <FormMessage />
