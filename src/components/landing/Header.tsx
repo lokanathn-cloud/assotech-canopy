@@ -59,7 +59,7 @@ const Header = () => {
                 +91 7668645668
               </a>
               <Button size="lg" className="font-semibold" asChild>
-                <a href="#lead-form">Get Quote</a>
+                <a href="#lead-form">Get Details</a>
               </Button>
             </div>
 
@@ -104,7 +104,7 @@ const Header = () => {
                     +91 7668645668
                   </a>
                   <Button className="w-full mt-4" asChild>
-                    <a href="#lead-form">Get Quote</a>
+                    <a href="#lead-form">Get Details</a>
                   </Button>
                 </div>
               </div>
